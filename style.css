@@ -87,7 +87,7 @@ body {
   width: calc(100% - 260px);
   min-height: 100vh;
   background: var(--bg-primary);
-  /* Remove flex centering */
+  padding: 2rem 0;
 }
 
 /* Hero Section */
@@ -173,15 +173,13 @@ body {
 }
 
 .container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 2rem;
   width: 100%;
-  /* Remove flex centering */
+  padding: 0 3vw;
+  margin: 0 auto;
 }
 
 .section-header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 2.5rem;
 }
 
@@ -211,10 +209,9 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  /* Remove justify-items: center */
 }
 
 /* Projects */
@@ -282,10 +279,9 @@ body {
 /* Skills */
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  /* Remove justify-items: center */
 }
 
 .skill-category {
@@ -341,8 +337,8 @@ body {
 .timeline {
   position: relative;
   margin-top: 2rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .timeline::before {
