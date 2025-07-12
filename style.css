@@ -100,6 +100,10 @@ body {
   padding: 0 2rem;
 }
 
+#skills .container {
+  max-width: 1200px;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -148,10 +152,14 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
-  width: 100%;
+}
+
+.skills-grid .card {
+  width: auto;
+  min-width: 0;
 }
 
 .skill-category h3 {
