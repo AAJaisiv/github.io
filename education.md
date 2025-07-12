@@ -15,9 +15,14 @@ title: Education
 
 # Education
 
-- **Degree:** Your Degree (e.g., B.Tech in Computer Science)
-- **Institution:** Your University Name
-- **Year:** 20XX - 20XX
-- **Relevant Coursework:** Data Structures, Machine Learning, etc.
+## Master of Science in Business Analytics
+- **Institution:** Seattle University
+- **Year:** June 2025
 
-<!-- Add more entries as needed --> 
+
+## Bachelor of Technology in Electrical and Electronic Engineering
+- **Institution:** Jawaharlal Nehru Technological University
+- **Year:** July 2019
+
+
+<!-- Add any certifications or additional education as needed --> 
