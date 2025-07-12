@@ -22,6 +22,7 @@ body {
   color: var(--text-primary);
   margin: 0;
   display: flex;
+  overflow-x: hidden;
 }
 
 /* Sidebar Navigation */
@@ -84,10 +85,11 @@ body {
 /* Main Content Layout */
 .main-content {
   margin-left: 260px;
-  width: calc(100% - 260px);
+  width: calc(100vw - 260px);
   min-height: 100vh;
   background: var(--bg-primary);
   padding: 2rem 0;
+  overflow-x: hidden;
 }
 
 /* Hero Section */
@@ -173,9 +175,10 @@ body {
 }
 
 .container {
-  width: 100%;
-  padding: 0 3vw;
+  max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
+  padding: 0 2rem;
 }
 
 .section-header {
@@ -212,6 +215,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 /* Projects */
@@ -282,6 +286,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .skill-category {
