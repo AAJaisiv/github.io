@@ -74,6 +74,9 @@ title:
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="theme-toggle" aria-label="Toggle data theme" style="margin-top:2rem; background:none; border:none; cursor:pointer; font-size:1.6rem; color:var(--accent);">
+          <i class="fas fa-database"></i>
+        </button>
     </nav>
     <div class="main-content">
         <!-- Home Section -->
@@ -408,6 +411,21 @@ title:
           }
         });
       });
+      // Theme toggle logic
+      const themeToggle = document.getElementById('theme-toggle');
+      function setTheme(theme) {
+        if (theme === 'data') {
+          document.body.classList.add('theme-data');
+        } else {
+          document.body.classList.remove('theme-data');
+        }
+      }
+      themeToggle.addEventListener('click', () => {
+        const isData = document.body.classList.toggle('theme-data');
+        localStorage.setItem('theme', isData ? 'data' : 'light');
+      });
+      // On load
+      setTheme(localStorage.getItem('theme'));
     </script>
 </body>
 </html>
