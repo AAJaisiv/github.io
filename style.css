@@ -32,7 +32,7 @@ body.theme-data {
   --highlight: #ffb400;
   --danger: #ff7675;
   --shadow: 0 4px 32px 0 rgba(56, 44, 99, 0.18);
-  background: var(--bg-gradient), url('data-theme-bg.svg') center/cover no-repeat fixed;
+  background: var(--bg-gradient), url('data-bg.jpg') center/cover no-repeat fixed;
   transition: background 0.4s, color 0.4s;
 }
 
