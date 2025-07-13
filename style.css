@@ -459,6 +459,12 @@ body {
   margin: 0 auto 1.5rem auto;
 }
 
+.skills-grid .card:hover {
+  box-shadow: 0 8px 32px 0 rgba(30,41,59,0.16);
+  border: 1.5px solid var(--accent);
+  transform: translateY(-4px) scale(1.02);
+}
+
 @media (max-width: 900px) {
   .navbar {
     width: 200px;
