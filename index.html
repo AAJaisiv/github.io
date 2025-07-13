@@ -74,12 +74,30 @@ title:
         justify-content: center;
         flex-wrap: wrap;
       }
+      .profile-pic-container {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 2.5rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .profile-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 4px solid var(--accent);
+        box-shadow: 0 4px 16px 0 rgba(30,41,59,0.10);
+      }
     </style>
 </head>
 <body>
     <!-- Sidebar Navigation -->
     <nav class="navbar">
-        <a href="#home" class="logo">Abhinav Jaisiv Arkala</a>
+        <div class="profile-pic-container">
+          <img src="profile.jpg" alt="Profile picture" class="profile-pic" />
+        </div>
         <ul class="nav-links">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#experience">Experience</a></li>
