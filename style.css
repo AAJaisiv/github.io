@@ -384,6 +384,17 @@ body {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
+#education .container {
+  max-width: 1100px;
+}
+
+#education .card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  width: 100%;
+}
+
 @media (max-width: 900px) {
   .navbar {
     width: 200px;
@@ -395,6 +406,9 @@ body {
   .education-grid {
     flex-direction: column;
     align-items: center;
+  }
+  #education .card-grid {
+    grid-template-columns: 1fr;
   }
 }
 
