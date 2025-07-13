@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;900&display=swap');
 
 :root {
-  --bg-main: #f6f9fb;
+  --bg-main: #1e8dd7;
   --bg-gradient: linear-gradient(120deg, #e0f7fa 0%, #f6f9fb 100%);
   --sidebar-bg: #1e293b;
   --primary: #2563eb;
   --primary-dark: #174ea6;
   --accent: #00b894;
   --accent-alt: #a259ff;
-  --card-bg: #ffffffcc;
+  --card-bg: #46809dd4;
   --text-main: #1e293b;
   --text-secondary: #64748b;
   --highlight: #fbbf24;
