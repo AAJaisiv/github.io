@@ -157,7 +157,7 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
   width: 100%;
@@ -167,11 +167,42 @@ body {
 }
 
 .skills-grid .card {
+  background: var(--card-bg);
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  border: 1px solid #e0e7ef44;
+  margin-bottom: 0;
+  backdrop-filter: blur(4px);
+  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+  text-align: left;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 1rem;
+  color: var(--text-main);
   width: 100%;
   min-width: 0;
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.skills-grid .card h3 {
+  font-family: 'Montserrat', 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.skills-grid ul {
+  padding-left: 1.2rem;
+  margin: 0;
+}
+
+.skills-grid li {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .skill-category h3 {
@@ -442,6 +473,13 @@ body {
   }
   #education .card-grid {
     grid-template-columns: 1fr;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+  .skills-grid .card {
+    max-width: 100%;
   }
 }
 
