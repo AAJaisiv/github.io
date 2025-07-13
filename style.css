@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;900&display=swap');
 
 :root {
-  --bg-main: #1e8dd7;
+  --bg-main: #f6f9fb;
   --bg-gradient: linear-gradient(120deg, #e0f7fa 0%, #f6f9fb 100%);
   --sidebar-bg: #1e293b;
   --primary: #2563eb;
   --primary-dark: #174ea6;
   --accent: #00b894;
   --accent-alt: #a259ff;
-  --card-bg: #46809dd4;
+  --card-bg: #ffffffcc;
   --text-main: #1e293b;
   --text-secondary: #64748b;
   --highlight: #fbbf24;
@@ -138,6 +138,7 @@ body {
   margin-bottom: 2rem;
   backdrop-filter: blur(4px);
   transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+  text-align: left;
 }
 
 .card:hover {
@@ -156,9 +157,10 @@ body {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
+  width: 100%;
 }
 
 .skills-grid .card {
