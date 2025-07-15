@@ -4,7 +4,12 @@ module.exports = {
     "./*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        eggshell: '#F0EAD6',
+        desertsand: '#EDC9AF',
+      },
+    },
   },
   plugins: [],
 }

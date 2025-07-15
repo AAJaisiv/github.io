@@ -92,39 +92,40 @@ title:
       }
     </style>
 </head>
-<body>
+<body class="bg-eggshell min-h-screen w-full">
+  <div class="flex min-h-screen">
     <!-- Sidebar Navigation -->
     <nav class="navbar">
-        <div class="profile-pic-container">
-          <img src="profile.jpg" alt="Profile picture" class="profile-pic" />
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <button id="theme-toggle" aria-label="Toggle data theme" style="margin-top:2rem; background:none; border:none; cursor:pointer; font-size:1.6rem; color:var(--accent);">
-          <i class="fas fa-database"></i>
-        </button>
+      <div class="profile-pic-container">
+        <img src="profile.jpg" alt="Profile picture" class="profile-pic" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle data theme" style="margin-top:2rem; background:none; border:none; cursor:pointer; font-size:1.6rem; color:var(--accent);">
+        <i class="fas fa-database"></i>
+      </button>
     </nav>
-    <div class="main-content">
-        <!-- Home Section -->
-        <section class="hero" id="home">
-            <div class="hero-container">
-                <h1>Hi, I'm Abhinav Jaisiv Arkala</h1>
-                <p class="hero-subtitle">Data Engineer & Analytics Expert</p>
-                <p class="hero-tagline">
-                    Cloud Geek | Product Enthusiast | Business Model & Growth Strategist | LLM Integration Specialist |
-                </p>
-                <p class="hero-description">
-                  I specialize in building scalable data solutions and transforming complex, multi-source data into actionable insights that significantly drive business growth and operational efficiencies. 
-                  I am highly skilled at leveraging advanced analytical modeling and AI-driven capabilities to unlock strategic opportunities.
-                </p>
-            </div>
-        </section>
+    <main class="main-content flex-1 bg-desertsand p-8">
+      <!-- Home Section -->
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <h1>Hi, I'm Abhinav Jaisiv Arkala</h1>
+          <p class="hero-subtitle">Data Engineer & Analytics Expert</p>
+          <p class="hero-tagline">
+            Cloud Geek | Product Enthusiast | Business Model & Growth Strategist | LLM Integration Specialist |
+          </p>
+          <p class="hero-description">
+            I specialize in building scalable data solutions and transforming complex, multi-source data into actionable insights that significantly drive business growth and operational efficiencies. 
+            I am highly skilled at leveraging advanced analytical modeling and AI-driven capabilities to unlock strategic opportunities.
+          </p>
+        </div>
+      </section>
 
         <!-- Experience Section -->
         <section class="section" id="experience">
@@ -420,7 +421,8 @@ title:
                 <p>&copy; 2024 Abhinav Jaisiv Arkala. All rights reserved.</p>
             </div>
         </footer>
-    </div>
+    </main>
+  </div>
     <script>
       // Highlight active nav link on scroll
       const sections = document.querySelectorAll('section');
