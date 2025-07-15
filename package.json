@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "tailwindcss -i ./styles.css -o ./output.css --minify"
+    "build:css": ""
   },
   "repository": {
     "type": "git",
@@ -18,10 +18,5 @@
   "bugs": {
     "url": "https://github.com/AAJaisiv/AAJaisiv.github.io/issues"
   },
-  "homepage": "https://github.com/AAJaisiv/AAJaisiv.github.io#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "postcss": "^8.5.6",
-    "tailwindcss": "^3.4.17"
-  }
+  "homepage": "https://github.com/AAJaisiv/AAJaisiv.github.io#readme"
 }
