@@ -89,7 +89,7 @@
       }
     </style>
 </head>
-<body class="bg-eggshell min-h-screen w-full">
+<body>
   <div class="flex min-h-screen">
     <!-- Sidebar Navigation -->
     <nav class="navbar">
@@ -104,11 +104,9 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button id="theme-toggle" aria-label="Toggle data theme" style="margin-top:2rem; background:none; border:none; cursor:pointer; font-size:1.6rem; color:var(--accent);">
-        <i class="fas fa-database"></i>
-      </button>
+
 </nav>
-    <main class="main-content flex-1 bg-desertsand p-8">
+    <main class="main-content">
       <!-- Home Section -->
       <section class="hero" id="home">
         <div class="hero-container">
@@ -228,56 +226,50 @@
                 <div class="card-grid">
                     <div class="card project-card">
                         <div class="project-image">
-                            <img src="az.jpg" alt="Azure E-Commerce Data Engineering Pipeline thumbnail" style="width:100%;height:160px;object-fit:cover;border-radius:12px;" />
+                            <img src="az.jpg" alt="Azure E-Commerce Data Engineering Pipeline thumbnail" />
                         </div>
-                        <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;">
-                            <span class="tech-tag" style="background:#1e90ff;color:#fff;font-weight:700;">Open Source</span>
-                        </div>
+                        <div class="tech-tag">Open Source</div>
                         <h3 class="project-title">End-to-End E-Commerce Data Engineering Pipeline on Azure</h3>
                         <p class="project-description">
                             A modular, production-grade data pipeline for e-commerce analytics using Microsoft Azure. This project covers the entire data lifecycle: ingestion, transformation, analytics-ready datasets, and business value reporting (sales, inventory, customer insights, returns analysis).<br><br>
                             <strong>Architecture:</strong> Azure Data Factory (ingestion), Databricks (transformation), Synapse (serving), Terraform (IaC), CI/CD (automation), Monitoring scripts.<br>
                             <strong>Business Value:</strong> Sales & inventory analytics, customer insights, returns analysis, cost optimization, and best practices for scalable, reliable pipelines.
                         </p>
-                        <div class="project-links" style="margin-top:0.7rem;">
+                        <div class="project-links">
                             <a href="https://github.com/AAJaisiv/azdatabricks1" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                     <div class="card project-card">
                         <div class="project-image">
-                            <img src="data_lake.jpg" alt="AWS Supply Chain Data Lake thumbnail" style="width:100%;height:160px;object-fit:cover;border-radius:12px;" />
+                            <img src="data_lake.jpg" alt="AWS Supply Chain Data Lake thumbnail" />
                         </div>
-                        <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;">
-                            <span class="tech-tag" style="background:#1e90ff;color:#fff;font-weight:700;">Open Source</span>
-                        </div>
+                        <div class="tech-tag">Open Source</div>
                         <h3 class="project-title">AWS Supply Chain Data Lake</h3>
                         <p class="project-description">
                             A robust, open-source AWS data lake solution for supply chain analytics. This project addresses the challenge of consolidating and analyzing large volumes of structured and unstructured supply chain data. It enables advanced analytics and business intelligence by leveraging AWS services for scalable storage, ETL, and serverless querying.<br><br>
                             <strong>Architecture:</strong> S3 (storage), Glue (ETL & Data Catalog), Athena/Redshift Spectrum (analytics), Lake Formation (governance), CI/CD (automation), CloudWatch/CloudTrail (monitoring).
                         </p>
-                        <div class="project-links" style="margin-top:0.7rem;">
+                        <div class="project-links">
                             <a href="https://github.com/AAJaisiv/supply-chain-datalake" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                     <div class="card project-card">
                         <div class="project-image">
-                            <img src="airline.jpg" alt="Airline Choice Prediction AWS Pipeline thumbnail" style="width:100%;height:160px;object-fit:cover;border-radius:12px;" />
+                            <img src="airline.jpg" alt="Airline Choice Prediction AWS Pipeline thumbnail" />
                         </div>
-                        <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;">
-                            <span class="tech-tag" style="background:#1e90ff;color:#fff;font-weight:700;">Open Source</span>
-                        </div>
+                        <div class="tech-tag">Open Source</div>
                         <h3 class="project-title">Airline Choice Prediction Using AWS</h3>
                         <p class="project-description">
                             A comprehensive, production-ready data engineering pipeline for predicting passenger airport and airline choices using AWS cloud infrastructure. This project demonstrates end-to-end data engineering with ML capabilities, featuring real-time data processing, automated model training, and enterprise-grade monitoring.<br><br>
                             <strong>Architecture:</strong> S3 (Bronze/Silver/Gold data lake), Redshift (warehouse), Glue (ETL), SageMaker (ML), Airflow (orchestration), CloudWatch (monitoring), CloudFormation (IaC).<br>
                             <strong>ML Predictions:</strong> Airport choice, airline preference, and booking likelihood with >85% accuracy and real-time processing capabilities.
                         </p>
-                        <div class="project-links" style="margin-top:0.7rem;">
+                        <div class="project-links">
                             <a href="https://github.com/AAJaisiv/AirlineAWS" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
-                <div style="text-align: center; margin-top: 2rem;">
+                <div class="text-center" style="margin-top: 2rem;">
                     <a href="https://github.com/AAJaisiv" class="btn btn-secondary" target="_blank">Explore more</a>
                 </div>
             </div>
@@ -400,21 +392,7 @@
           }
         });
       });
-      // Theme toggle logic
-      const themeToggle = document.getElementById('theme-toggle');
-      function setTheme(theme) {
-        if (theme === 'data') {
-          document.body.classList.add('theme-data');
-        } else {
-          document.body.classList.remove('theme-data');
-        }
-      }
-      themeToggle.addEventListener('click', () => {
-        const isData = document.body.classList.toggle('theme-data');
-        localStorage.setItem('theme', isData ? 'data' : 'light');
-      });
-      // On load
-      setTheme(localStorage.getItem('theme'));
+
     </script>
 </body>
 </html>
