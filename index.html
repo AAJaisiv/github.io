@@ -9,7 +9,7 @@ title:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinav Jaisiv Arkala</title>
-    <link href="output.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
       html {
@@ -264,22 +264,19 @@ title:
                     </div>
                     <div class="card project-card">
                         <div class="project-image">
-                            <i class="fas fa-database"></i>
+                            <img src="arline.jpg" alt="Airline Choice Prediction AWS Pipeline thumbnail" style="width:100%;height:160px;object-fit:cover;border-radius:12px;" />
                         </div>
-                        <h3 class="project-title">ETL Pipeline</h3>
+                        <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;">
+                            <span class="tech-tag" style="background:#1e90ff;color:#fff;font-weight:700;">Open Source</span>
+                        </div>
+                        <h3 class="project-title">Airline Choice Prediction Using AWS</h3>
                         <p class="project-description">
-                            Designed and implemented a robust ETL pipeline using Apache Airflow to process 
-                            large-scale data from multiple sources into a centralized data warehouse.
+                            A comprehensive, production-ready data engineering pipeline for predicting passenger airport and airline choices using AWS cloud infrastructure. This project demonstrates end-to-end data engineering with ML capabilities, featuring real-time data processing, automated model training, and enterprise-grade monitoring.<br><br>
+                            <strong>Architecture:</strong> S3 (Bronze/Silver/Gold data lake), Redshift (warehouse), Glue (ETL), SageMaker (ML), Airflow (orchestration), CloudWatch (monitoring), CloudFormation (IaC).<br>
+                            <strong>ML Predictions:</strong> Airport choice, airline preference, and booking likelihood with >85% accuracy and real-time processing capabilities.
                         </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Apache Airflow</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                            <a href="#"><i class="fas fa-external-link-alt"></i> Documentation</a>
+                        <div class="project-links" style="margin-top:0.7rem;">
+                            <a href="https://github.com/AAJaisiv/AirlineAWS" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
