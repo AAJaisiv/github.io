@@ -1,0 +1,423 @@
+---
+layout: default
+title:
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhinav Jaisiv Arkala</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 350px;
+        background: var(--bg-gradient);
+        color: var(--text-main);
+        padding: 4rem 0 3rem 0;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+        transition: background 0.4s, color 0.4s;
+      }
+      .hero-container {
+        max-width: 700px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+      .hero h1 {
+        font-size: 2.5rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+        color: var(--primary);
+        font-family: 'Montserrat', 'Inter', sans-serif;
+        transition: color 0.4s;
+      }
+      .hero-subtitle {
+        font-size: 1.25rem;
+        font-weight: 700;
+        color: var(--accent);
+        margin-bottom: 1.5rem;
+        font-family: 'Montserrat', 'Inter', sans-serif;
+        transition: color 0.4s;
+      }
+      .hero-tagline {
+        font-size: 1.1rem;
+        color: var(--accent-alt);
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+        transition: color 0.4s;
+      }
+      .hero-description {
+        font-size: 1.1rem;
+        color: var(--text-secondary);
+        margin-bottom: 2.5rem;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        transition: color 0.4s;
+      }
+      .cta-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+      .profile-pic-container {
+        width: 120px;
+        height: 160px;
+        margin: 0 auto 2.5rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .profile-pic {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+        border: 4px solid var(--accent);
+        box-shadow: 0 4px 16px 0 rgba(30,41,59,0.10);
+      }
+    </style>
+</head>
+<body class="bg-eggshell min-h-screen w-full">
+  <div class="flex min-h-screen">
+    <!-- Sidebar Navigation -->
+    <nav class="navbar">
+      <div class="profile-pic-container">
+        <img src="profile.jpg" alt="Profile picture" class="profile-pic" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" aria-label="Toggle data theme" style="margin-top:2rem; background:none; border:none; cursor:pointer; font-size:1.6rem; color:var(--accent);">
+        <i class="fas fa-database"></i>
+      </button>
+</nav>
+    <main class="main-content flex-1 bg-desertsand p-8">
+      <!-- Home Section -->
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <h1>Hi, I'm Abhinav Jaisiv Arkala</h1>
+          <p class="hero-subtitle">Data Engineer & Analytics Expert</p>
+          <p class="hero-tagline">
+            Cloud Geek | Product Enthusiast | Business Model & Growth Strategist | LLM Integration Specialist |
+          </p>
+          <p class="hero-description">
+            I specialize in building scalable data solutions and transforming complex, multi-source data into actionable insights that significantly drive business growth and operational efficiencies. 
+            I am highly skilled at leveraging advanced analytical modeling and AI-driven capabilities to unlock strategic opportunities.
+          </p>
+        </div>
+      </section>
+
+        <!-- Experience Section -->
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="section-subtitle">Professional roles and impactful contributions</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-title">Data Analyst, SFS</div>
+                            <div class="experience-company">Seattle University School of Law, Seattle WA</div>
+                            <div class="experience-date">March 2024 - June 2024</div>
+                            <div class="experience-description">
+                                <strong>Skills/Tech Stack:</strong> Microsoft Power BI, Auditing, Excel, Microsoft SQL Server, Python, SAS, Microsoft Azure, SharePoint, Azure Data Factory, Azure Databricks, Azure Synapse
+                                <br/>
+                                <span>Developed and automated audit dashboards and reports, integrating data from multiple sources using Azure and Power BI for actionable legal and financial insights.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-title">Data Engineer Consultant - Capstone</div>
+                            <div class="experience-company">SDI Engineering, Seattle WA</div>
+                            <div class="experience-date">September 2024 - December 2024</div>
+                            <div class="experience-description">
+                                <strong>Skills/Tech Stack:</strong> Azure Data Factory, Microsoft Azure Machine Learning, Azure Cosmos DB, Azure Databricks, Market Analysis, Microsoft Power Automate, Large Language Models (LLM), Natural Language Processing (NLP)
+                                <br/>
+                                <span>Designed and implemented advanced data pipelines and machine learning workflows on Azure, leveraging LLMs and NLP for market analysis and automation.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-title">Data Engineer</div>
+                            <div class="experience-company">Amazon, Hyderabad, India</div>
+                            <div class="experience-date">August 2019 - August 2023</div>
+                            <div class="experience-description">
+                                <strong>Skills/Tech Stack:</strong> Apache Kafka, Python, Amazon DynamoDB, Amazon Redshift, SQL, ETL, Analytics, Client Presentation, Business Requirements, Project Lifecycle Management
+                                <br/>
+                                <span>Led the design and deployment of scalable data pipelines and analytics solutions for business-critical applications. Managed end-to-end ETL processes, data warehousing, and real-time data streaming using AWS services. Collaborated with cross-functional teams to deliver actionable insights and improve customer experience.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-title">Data Engineer Intern, Quality Control</div>
+                            <div class="experience-company">South Central Railways, Hyderabad, India</div>
+                            <div class="experience-date">March 2018 - August 2019</div>
+                            <div class="experience-description">
+                                <strong>Skills/Tech Stack:</strong> Data Modelling, ETL (SSIS), SQL Server, User-Centric Data Solutions
+                                <br/>
+                                <span>Developed and maintained ETL pipelines using SSIS, performed data modeling, and built user-centric data solutions to support quality control operations.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="experience-card">
+                            <div class="experience-title">Data Analyst Intern</div>
+                            <div class="experience-company">Smiley Serve, Hyderabad, India</div>
+                            <div class="experience-date">March 2017 - August 2017</div>
+                            <div class="experience-description">
+                                <strong>Skills/Tech Stack:</strong> Data Modelling, Tableau, Dashboarding, Operational Insights
+                                <br/>
+                                <span>Built interactive Tableau dashboards and performed data modeling to deliver operational insights for business process optimization.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-subtitle">Academic background and achievements</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="experience-title">Masters in Business Analytics</div>
+                        <div class="experience-company">Albers School of Business,<br>Seattle University - Seattle, WA</div>
+                        <div class="experience-date">2023 - 2025</div>
+                    </div>
+                    <div class="card">
+                        <div class="experience-title">Bachelors in Technology</div>
+                        <div class="experience-company">Electrical and Electronic Engineering,<br>minor - CS applications<br>Jawaharlal Nehru Technological University</div>
+                        <div class="experience-date">2015 - 2019</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="section-subtitle">A selection of my work in data and analytics</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <img src="az.jpg" alt="Azure E-Commerce Data Engineering Pipeline thumbnail" style="width:100%;height:160px;object-fit:cover;border-radius:12px;" />
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;">
+                            <span class="tech-tag" style="background:#1e90ff;color:#fff;font-weight:700;">Open Source</span>
+                        </div>
+                        <h3 class="project-title">End-to-End E-Commerce Data Engineering Pipeline on Azure</h3>
+                        <p class="project-description">
+                            A modular, production-grade data pipeline for e-commerce analytics using Microsoft Azure. This project covers the entire data lifecycle: ingestion, transformation, analytics-ready datasets, and business value reporting (sales, inventory, customer insights, returns analysis).<br><br>
+                            <strong>Architecture:</strong> Azure Data Factory (ingestion), Databricks (transformation), Synapse (serving), Terraform (IaC), CI/CD (automation), Monitoring scripts.<br>
+                            <strong>Business Value:</strong> Sales & inventory analytics, customer insights, returns analysis, cost optimization, and best practices for scalable, reliable pipelines.
+                        </p>
+                        <div class="project-links" style="margin-top:0.7rem;">
+                            <a href="https://github.com/AAJaisiv/azdatabricks1" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <img src="data_lake.jpg" alt="AWS Supply Chain Data Lake thumbnail" style="width:100%;height:160px;object-fit:cover;border-radius:12px;" />
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;">
+                            <span class="tech-tag" style="background:#1e90ff;color:#fff;font-weight:700;">Open Source</span>
+                        </div>
+                        <h3 class="project-title">AWS Supply Chain Data Lake</h3>
+                        <p class="project-description">
+                            A robust, open-source AWS data lake solution for supply chain analytics. This project addresses the challenge of consolidating and analyzing large volumes of structured and unstructured supply chain data. It enables advanced analytics and business intelligence by leveraging AWS services for scalable storage, ETL, and serverless querying.<br><br>
+                            <strong>Architecture:</strong> S3 (storage), Glue (ETL & Data Catalog), Athena/Redshift Spectrum (analytics), Lake Formation (governance), CI/CD (automation), CloudWatch/CloudTrail (monitoring).
+                        </p>
+                        <div class="project-links" style="margin-top:0.7rem;">
+                            <a href="https://github.com/AAJaisiv/supply-chain-datalake" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card project-card">
+                        <div class="project-image">
+                            <img src="arline.jpg" alt="Airline Choice Prediction AWS Pipeline thumbnail" style="width:100%;height:160px;object-fit:cover;border-radius:12px;" />
+                        </div>
+                        <div style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem;">
+                            <span class="tech-tag" style="background:#1e90ff;color:#fff;font-weight:700;">Open Source</span>
+                        </div>
+                        <h3 class="project-title">Airline Choice Prediction Using AWS</h3>
+                        <p class="project-description">
+                            A comprehensive, production-ready data engineering pipeline for predicting passenger airport and airline choices using AWS cloud infrastructure. This project demonstrates end-to-end data engineering with ML capabilities, featuring real-time data processing, automated model training, and enterprise-grade monitoring.<br><br>
+                            <strong>Architecture:</strong> S3 (Bronze/Silver/Gold data lake), Redshift (warehouse), Glue (ETL), SageMaker (ML), Airflow (orchestration), CloudWatch (monitoring), CloudFormation (IaC).<br>
+                            <strong>ML Predictions:</strong> Airport choice, airline preference, and booking likelihood with >85% accuracy and real-time processing capabilities.
+                        </p>
+                        <div class="project-links" style="margin-top:0.7rem;">
+                            <a href="https://github.com/AAJaisiv/AirlineAWS" target="_blank" title="GitHub Repository"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 2rem;">
+                    <a href="https://github.com/AAJaisiv" class="btn btn-secondary" target="_blank">Explore more</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills</h2>
+                    <p class="section-subtitle">Technical expertise across data engineering, analytics, machine learning, and cloud</p>
+                </div>
+                <div class="skills-grid">
+                    <div class="card">
+                        <h3>💻 Programming & Data Manipulation</h3>
+                        <ul>
+                            <li><strong>Languages:</strong> Python, SQL (T-SQL, PL/SQL, PostgreSQL, MySQL), Java, Scala, C++, JavaScript</li>
+                            <li><strong>Data Libraries/Frameworks:</strong> Pandas, NumPy, PySpark, Hadoop dbt (SQL-based modeling)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🔄 Data Engineering & ETL/ELT</h3>
+                        <ul>
+                            <li><strong>ETL Tools:</strong> AWS Glue, Azure Data Factory, SSIS, Apache Nifi</li>
+                            <li><strong>Batch & Streaming Processing:</strong> Apache Spark, PySpark, Apache Flink, Kafka</li>
+                            <li><strong>Data Ingestion:</strong> Kafka, REST APIs, SFTP Connectors</li>
+                            <li><strong>Data Warehousing:</strong> Amazon Redshift, BigQuery, Snowflake</li>
+                            <li><strong>Data Lake & Lakehouse:</strong> AWS S3, Delta Lake, HDFS</li>
+                            <li><strong>Orchestration Frameworks:</strong> Apache Airflow, AWS Step Functions, Prefect, Dagster</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>☁️ Cloud & DevOps</h3>
+                        <ul>
+                            <li><strong>Cloud Platforms:</strong> AWS (primary), Azure, GCP</li>
+                            <li><strong>Infrastructure Tools:</strong> Docker, Terraform, Jenkins, GitLab CI/CD</li>
+                            <li><strong>Other:</strong> Linux, RBAC (Role-Based Access Control)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>📊 Business Intelligence & Data Visualization</h3>
+                        <ul>
+                            <li><strong>BI Tools:</strong> Power BI, Tableau, Looker, Hex</li>
+                            <li><strong>Reporting & Dashboarding:</strong> DAX, Power Query</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🤖 Machine Learning & AI</h3>
+                        <ul>
+                            <li><strong>ML Libraries:</strong> Scikit-learn, TensorFlow</li>
+                            <li><strong>ML Lifecycle:</strong> MLflow, Feature Engineering (Feast), Model Evaluation</li>
+                            <li><strong>LLM Integration & NLP:</strong> Prompt Engineering, Text Preprocessing, Transformers</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>🚀 Agile & Project Management</h3>
+                        <ul>
+                            <li><strong>Methodologies:</strong> Agile, Scrum</li>
+                            <li><strong>Tools:</strong> Jira, Confluence</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contact</h2>
+                    <p class="section-subtitle">Let's connect! I'm always interested in new opportunities and collaborations.</p>
+                </div>
+                <div class="card-grid">
+                    <div class="card contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>Lets discuss opportunities and collaborations</p>
+                        <a href="mailto:abhinavarkala@gmail.com">abhinavarkala@gmail.com</a>
+                    </div>
+                    <div class="card contact-card">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>Connect professionally</p>
+                        <a href="https://www.linkedin.com/in/abhinavjaisivarkala/" target="_blank">linkedin.com/in/abhinavjaisivarkala</a>
+                    </div>
+                    <div class="card contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                        <p>Check out my code</p>
+                        <a href="https://github.com/AAJaisiv" target="_blank">github.com/AAJaisiv</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Abhinav Jaisiv Arkala. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+  </div>
+    <script>
+      // Highlight active nav link on scroll
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-links a');
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 80;
+          if (pageYOffset >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#' + current) {
+            link.classList.add('active');
+          }
+        });
+      });
+      // Theme toggle logic
+      const themeToggle = document.getElementById('theme-toggle');
+      function setTheme(theme) {
+        if (theme === 'data') {
+          document.body.classList.add('theme-data');
+        } else {
+          document.body.classList.remove('theme-data');
+        }
+      }
+      themeToggle.addEventListener('click', () => {
+        const isData = document.body.classList.toggle('theme-data');
+        localStorage.setItem('theme', isData ? 'data' : 'light');
+      });
+      // On load
+      setTheme(localStorage.getItem('theme'));
+    </script>
+</body>
+</html>
