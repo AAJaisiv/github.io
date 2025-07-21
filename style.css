@@ -202,14 +202,24 @@ body {
 }
 
 .project-image {
+  width: 100%;
+  height: 180px; /* Consistent height for all thumbnails */
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
   margin-bottom: 1rem;
+  background: #f0f0f0; /* fallback background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .project-image img {
   width: 100%;
-  height: 200px;
+  height: 100%;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 12px;
+  display: block;
 }
 
 .tech-tag {
